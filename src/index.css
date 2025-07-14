@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-50;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-sky-400;
+}
+
+.glass-effect {
+  @apply bg-slate-800/50 backdrop-blur-lg border border-slate-700;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:border-emerald-400/50 hover:scale-[1.02] hover:shadow-2xl hover:shadow-emerald-500/10;
+}
